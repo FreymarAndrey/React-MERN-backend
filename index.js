@@ -19,7 +19,7 @@ app.use(express.static("public"));
 app.use(express.json());
 
 // Rutas
-app.get("/", (_, res = express.response) => {
+app.get("/api", (_, res = express.response) => {
   return res.send("welcome to api");
 });
 app.use("/api/auth", require("./routes/auth"));
